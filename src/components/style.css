@@ -1,0 +1,530 @@
+/* Variabel Warna */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #333;
+  --light-color: #fff;
+}
+
+/* Mengatur margin dan padding dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Menggunakan font Roboto */
+}
+
+/* Gaya untuk header */
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background-color: var(--secondary-color);
+}
+
+/* Gaya umum home */
+.home-section {
+  background-image: url('/public/bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.home-section .container {
+  max-width: 960px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .features {
+  margin-top: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .cta-section {
+  margin-top: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .cta-section .btn {
+  margin-right: 5px;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .list-unstyled {
+  list-style-type: none;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .list-unstyled li {
+  margin-bottom: 5px;
+  animation: fadeInUp 1s ease;
+}
+
+.home-section .display-4 {
+  animation: fadeInUp 1s ease;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+  .home-section {
+    padding: 30px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation: fadeInUp 1s ease;
+  }
+
+  .home-section .display-4 {
+    font-size: 2em;
+    animation: fadeInUp 1s ease;
+  }
+
+  .home-section .lead {
+    font-size: 1em;
+    animation: fadeInUp 1s ease;
+  }
+
+  .home-section .cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1s ease;
+  }
+
+  .home-section .cta-section .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease;
+  }
+}
+
+/* Gaya umum about us */
+.about-section {
+  background-image: url('/public/bg.png');
+  background-attachment: fixed;
+  padding: 60px 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  overflow: hidden;
+}
+
+.about-section .container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.about-section .section-title {
+  font-size: 1.75em;
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.about-section .lead {
+  font-size: 1.25em;
+  color: var(--secondary-color);
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease 0.2s backwards;
+}
+
+.about-section .content > div {
+  margin-bottom: 40px;
+  padding: 20px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 1s ease 0.4s backwards;
+}
+
+.about-section .values .list-unstyled {
+  list-style-type: none;
+  padding: 0;
+}
+
+.about-section .values .list-unstyled li {
+  margin-bottom: 10px;
+  color: var(--secondary-color);
+}
+
+
+.about-section .team-photo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+}
+
+.about-section .team-photos {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-section .testimonials {
+  background: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease 0.6s backwards;
+}
+
+.about-section .testimonials p {
+  font-style: italic;
+  color: var(--secondary-color);
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 30px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .about-section .content > div {
+    flex-basis: 100%;
+  }
+
+  .about-section .team-photos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .team-photo {
+    margin-bottom: 10px;
+  }
+
+  .about-section .lead {
+    font-size: 1em;
+  }
+
+  .about-section .section-title {
+    font-size: 1.5em;
+  }
+}
+
+/* Gaya umum features */
+.features-section {
+  background: var(--light-color);
+  padding: 60px 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.features-section .container {
+  max-width: 960px;
+  margin: 0 auto;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .section-title {
+  color: var(--secondary-color);
+  font-weight: bold;
+  margin-bottom: 40px;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .product-image {
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .feature-icon {
+  color: var(--primary-color);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .feature-icon:hover {
+  transform: scale(1.1);
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .cta-section {
+  margin-top: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .cta-section .btn {
+  margin-right: 5px;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .testimonials {
+  background-color: #e8e8e8;
+  padding: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 1s ease;
+}
+
+.features-section .testimonials p {
+  color: var(--secondary-color);
+  font-style: italic;
+  animation: fadeInUp 1s ease;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+  .features-section {
+    padding: 30px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    animation: fadeInUp 1s ease;
+  }
+
+  .features-section .section-title {
+    font-size: 1.5em;
+    animation: fadeInUp 1s ease;
+  }
+
+  .features-section .cta-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fadeInUp 1s ease;
+  }
+
+  .features-section .cta-section .btn {
+    margin-right: 0;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease;
+  }
+}
+
+/* Gaya umum courses section */
+.courses-section {
+  background-image: url('/public/bg.png');
+  background-attachment: fixed;
+  padding: 60px 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.courses-section .section-title {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.courses-section .course-card {
+  background: #fff; /* Warna latar belakang card */
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan card */
+  padding: 20px;
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.courses-section .course-icon {
+  color: var(--primary-color); /* Warna ikon */
+  margin-bottom: 20px;
+}
+
+.courses-section h3 {
+  color: var(--secondary-color);
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.courses-section p {
+  color: var(--secondary-color);
+  font-size: 1.1em;
+  margin-bottom: 20px;
+}
+
+.courses-section .btn-primary {
+  background: var(--primary-color); /* Warna tombol Daftar Sekarang */
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background 0.3s ease;
+}
+
+.courses-section .btn-primary:hover {
+  background: var(--secondary-color); /* Warna tombol saat dihover */
+}
+
+/* Gaya umum contact us */
+.contact-section {
+  background-image: url('/public/bg.png');
+  background-attachment: fixed;
+  padding: 60px 10px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-section .section-title {
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .lead {
+  color: var(--secondary-color);
+  font-size: 1.25em;
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .contact-form {
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .form-group {
+  margin-bottom: 20px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .form-control {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .contact-info,
+.contact-section .social-media {
+  margin-bottom: 30px;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .social-media a {
+  margin-right: 10px;
+  color: var(--dark-color);
+  transition: color 0.3s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.contact-section .social-media a:hover {
+  color: var(--secondary-color);
+  animation: fadeInUp 1s ease;
+}
+
+/* Responsivitas untuk layar kecil */
+@media (max-width: 768px) {
+  .contact-section {
+    padding: 30px 10px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .contact-section .section-title {
+    font-size: 1.75em;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contact-section .lead {
+    font-size: 1em;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contact-section .form-group {
+    padding: 0 10px;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contact-section .contact-form {
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+  }
+
+  .contact-section .social-media a {
+    display: block;
+    margin-bottom: 10px;
+    animation: fadeInUp 1s ease;
+  }
+}
+
+/* Gaya umum footer */
+.footer-section {
+  background-color: var(--secondary-color);
+  color: var(--light-color);
+  padding: 20px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .footer-section {
+    padding: 20px 10px;
+  }
+}
+
+/* Gaya untuk navbar */
+.navbar {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 255, 0.5); /* Warna biru transparan dengan opacity 50% */
+}
+
+.navbar-logo {
+  width: 60px;
+  height: 60px;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--light-color);
+}
+
+.nav-link {
+  color: var(--light-color) !important;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: red !important;
+}
+
+
+.btn {
+  margin-top: 20px;
+}
+
+/* Gaya untuk tombol */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+.btn-primary:hover {
+  background-color: #0069d9;
+  border-color: #0062cc;
+}
+
+/* Animasi */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
